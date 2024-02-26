@@ -1,8 +1,44 @@
-# React + Vite
+# Cinema Archive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### [View on Netlify](https://cinema-archive.netlify.app/)
 
-Currently, two official plugins are available:
+![](./src/assets/design/desktop-preview.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
+
+This site uses the Internet Archive API to list an play classic films.
+
+## Credits
+
+This is an apadtation of the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). 
+
+
+## Table of contents
+
+
+- [Built with](#built-with)
+
+## Built with
+
+<!-- Bagdes -->
+
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+[](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+- React
+- React Hooks (useState, useEffect)
+- Tailwind CSS
+- Semantic HTML5 markup
+- Flex Layout
+
+### Links to documentation
+
+- [Node.js](https://nodejs.org/en)
+- [Internet Archive](https://archive.org/developers/index-apis.html)
+- [React](https://reactjs.org/)
+- [Slick Carousel](https://react-slick.neostack.com/)
+- [Tailwind CSS](https://tailwindcss.com/docs/guides/vite)
+- [Vite](https://vitejs.dev/)
