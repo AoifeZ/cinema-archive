@@ -1,3 +1,4 @@
+import React from 'react';
 import internetarchive from "../../assets/images/internet-archive.png";
 import github from "../../assets/images/github.png";
 import mockupDesktop from "../../assets/images/image-hero-desktop.png";
