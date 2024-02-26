@@ -1,12 +1,14 @@
 # Cinema Archive
 
-### [View on Netlify](https://cinema-archive.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1b82cc4f-3c17-4bd3-aece-d85f25d5f124/deploy-status)](https://app.netlify.com/sites/cinema-archive/deploys)
+###  🔗  [View on Netlify](https://cinema-archive.netlify.app/)
 
+### Preview:
 ![](./src/assets/design/desktop-preview.jpg)
 
 ## Description
 
-This site uses the Internet Archive API to list an play classic films.
+This site uses the Internet Archive API to list and play classic films.
 
 ## Credits
 
