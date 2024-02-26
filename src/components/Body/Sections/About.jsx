@@ -19,7 +19,7 @@ const About = () => {
 							<li className="py-2">
 								<div className="flex items-center">
 									<div>
-										<span className="inline-block p-2 rounded-full bg-purple-700 ml-1 mr-3"></span>
+										<span className="inline-block p-2 rounded-full bg-cyan-500 ml-1 mr-3"></span>
 									</div>
 									<div>
 										<h4 className="text-blueGray-500">
