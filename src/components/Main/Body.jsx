@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import aboutImage from "../../assets/images/image-about-banner.png";
+import aboutImage from "/assets/images/image-about-banner.png";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';

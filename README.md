@@ -30,5 +30,4 @@ This is an apadtation of the [Intro section with dropdown navigation challenge o
 
 - [React documentation](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-
-This project uses [yarn](https://classic.yarnpkg.com). If you do not have yarn, find the installation and run instructions [here](https://classic.yarnpkg.com/en/docs/install).
+- [Yarn](https://classic.yarnpkg.com)

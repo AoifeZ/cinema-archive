@@ -2,12 +2,12 @@ import styles from "../../../styles";
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
 import ThemeSwitcher from "../../ThemeSwitcher/ThemeSwitcher";
 import { useState } from "react";
-import FAlaugh from "../../../assets/images/falaugh.svg";
-import FAsquint from "../../../assets/images/fasquint.svg";
-import FAghost from "../../../assets/images/faghost.svg";
-import FAmasks from "../../../assets/images/famasks.svg";
-import FAskulls from "../../../assets/images/faskull.svg";
-import FApen from "../../../assets/images/fapen.svg";
+import FAlaugh from "/assets/images/falaugh.svg";
+import FAsquint from "/assets/images/fasquint.svg";
+import FAghost from "/assets/images/faghost.svg";
+import FAmasks from "/assets/images/famasks.svg";
+import FAskulls from "/assets/images/faskull.svg";
+import FApen from "/assets/images/fapen.svg";
 
 const Navbar = ({ toggleMenu, isMenuOpen }) => {
   const [AboutMenu, setAboutMenu] = useState(false);
