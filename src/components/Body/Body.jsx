@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Hero from './Sections/Hero';
-import FilmSliders from './Sections/FilmSliders';
+import FilmSection from './Sections/FilmSection/FilmSection';
 import About from './Sections/About';
 
 const Body = () => {
 	return (
 		<div>
 			<Hero />
-			<FilmSliders />
+			<FilmSection />
 			<About />
 		</div>
 	);
