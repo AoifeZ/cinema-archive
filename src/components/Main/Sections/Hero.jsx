@@ -37,7 +37,7 @@ const Hero = () => {
 				<div>
 					<ul className="flex flex-wrap items-center gap-[2.5625rem] max-md:justify-center">
 						<li>
-							<a href="#" className="block">
+							<a href="https://archive.org/details/moviesandfilms" className="block">
 								<img
 									src={internetarchive}
 									alt="Internet Archive"
@@ -48,7 +48,7 @@ const Hero = () => {
 							</a>
 						</li>
 						<li>
-							<a href="#" className="block">
+							<a href="https://github.com/AoifeEdX/cinema-archive" className="block">
 								<img
 									src={github}
 									alt="github"

@@ -79,7 +79,7 @@ const Navbar = ({ toggleMenu, isMenuOpen }) => {
 								: ""
 							} transition-visibility invisible flex w-max flex-col gap-4 rounded-md leading-none lg:left-0 lg:-translate-y-[40%] lg:bg-white/95 lg:opacity-0 lg:dark:bg-gray-800/95`}
 					>
-						{[["History"], ["Our Team"], ["Blog"]].map(([text], index) => (
+						{[["Internet Archive database"], ["React + Vite.js"], ["Tailwind CSS"]].map(([text], index) => (
 							<li key={`About-${index}`}>
 								<a
 									href="#"
