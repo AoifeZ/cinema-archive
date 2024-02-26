@@ -1,7 +1,7 @@
-import internetarchive from "/assets/images/internet-archive.png";
-import github from "/assets/images/github.png";
-import mockupDesktop from "/assets/images/image-hero-desktop.png";
-import mockupMobile from "/assets/images/image-hero-mobile.png";
+import internetarchive from "https://github.com/AoifeEdX/cinema-archive/blob/main/src/assets/images/internet-archive.png";
+import github from "https://github.com/AoifeEdX/cinema-archive/blob/main/src/assets/images/github.png";
+import heroDesktop from "https://github.com/AoifeEdX/cinema-archive/blob/main/src/assets/images/image-hero-desktop.png";
+import heroMobile from "https://github.com/AoifeEdX/cinema-archive/blob/main/src/assets/images/image-hero-mobile.png";
 import styles from "../../styles";
 
 const Hero = () => {
@@ -15,11 +15,11 @@ const Hero = () => {
 				<picture>
 					<source
 						media="(min-width: 48rem)"
-						srcSet={mockupDesktop}
+						srcSet={heroDesktop}
 						type="image/png"
 					/>
 					<img
-						src={mockupMobile}
+						src={heroMobile}
 						alt=""
 						aria-hidden="true"
 						width={480}
@@ -28,7 +28,7 @@ const Hero = () => {
 					/>
 				</picture>
 			</div>
-			<div className="my-[0.4375rem] flex flex-1 flex-col justify-center gap-[3.0625rem] text-center text-normal md:my-[1.5625rem] md:mx-[2.1875rem] md:text-left lg:my-[6.4375rem]">		
+			<div className="my-[0.4375rem] flex flex-1 flex-col justify-center gap-[3.0625rem] text-center text-normal md:my-[1.5625rem] md:mx-[2.1875rem] md:text-left lg:my-[6.4375rem]">
 				<h1 className="text-[1.7rem] font-[700] leading-none tracking-[-0.013em] text-almost-black transition duration-300 ease-in-out dark:text-white md:max-w-[10.8ch] md:text-[4.4rem]"><span className="text-[1.7rem] font-[100] leading-[1.5em] md:text-[4rem]">Discover </span>Cinema Archive</h1>
 				<p className="max-w-[43ch] leading-[1.6] tracking-[0.01em] text-medium-gray transition duration-300 ease-in-out dark:text-almost-white md:text-normal max-md:mx-auto">
 					Watch a curated selection of classic films from the <strong>Internet Archive</strong>.
