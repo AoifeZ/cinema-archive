@@ -76,7 +76,7 @@
     display: block;
   }
 
-  .dot::before {
+	.dot::before {
     content: "";
     position: absolute;
     left: 2px;
@@ -97,6 +97,32 @@
     background: linear-gradient(45deg, #726CEE, #4BB1DA);
   }
 
+  .icon-todo::before {
+    content: url("./assets/images/icon-todo.svg");
+    display: inline-block;
+  }
+
+  .icon-calendar::before {
+    content: url("./assets/images/icon-calendar.svg");
+    display: inline-block;
+  }
+
+  .icon-reminder::before {
+    content: url("./assets/images/icon-reminders.svg");
+    display: inline-block;
+  }
+
+  .icon-planning::before {
+    content: url("./assets/images/icon-planning.svg");
+    display: inline-block;
+  }
+
+  .icon-menu::after {
+    content: url("./assets/images/icon-arrow-down.svg");
+    display: inline-block;
+    transition: all 220ms linear;
+  }
+
   html.dark .icon-menu::after {
     filter: invert(1) brightness(6) hue-rotate(180deg);
   }
@@ -104,6 +130,7 @@
   .icon-menu[aria-expanded="true"]::after {
     transform: rotate(180deg);
   }
+
 
   .width-fill-available {
     width: -webkit-fill-available;

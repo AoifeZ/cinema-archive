@@ -153,8 +153,8 @@ const Body = () => {
 			)}
 			<section className="relative py-12">
 				<div className="items-center flex flex-wrap">
-					<div className="w-full md:w-5/12 ml-auto mr-auto">
-						<img alt="..." className="max-w-full md:rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					<div className="w-full md:w-5/12 p-3 ml-auto mr-auto">
+						<img alt="..." className="max-w-full rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
 					</div>
 					<div className="w-full md:w-5/12 ml-auto mr-auto px-4 dark:text-white">
 						<div className="md:pr-12">

@@ -41,21 +41,23 @@ const Navbar = ({ toggleMenu, isMenuOpen }) => {
 					<ul
 						id="Genres-menu"
 						className={`${styles.submenumobile} ${styles.submenudesktop} ${GenresMenu
-							? "!visible p-4 pb-0 lg:!translate-y-[3rem] lg:!opacity-100 max-lg:max-h-max"
-							: ""
+								? "!visible p-4 pb-0 lg:!translate-y-[3rem] lg:!opacity-100 max-lg:max-h-max"
+								: ""
 							} transition-visibility invisible flex w-max flex-col gap-4 rounded-md leading-none lg:right-0 lg:-translate-y-[40%] lg:bg-white/95 lg:opacity-0 lg:dark:bg-gray-800/95`}
 					>
 						{/* START Genres Sub-menu */}
-						{[["Animation"], ["Comedy"], ["Drama"], ["Horror"]].map(([className, text], index) => (
-							<li key={`Genres-${index}`}>
-								<a
-									href="#"
-									className={`${className} ${styles.transition} flex gap-4 hover:text-almost-black dark:hover:text-gray-400`}
-								>
-									{text}
-								</a>
-							</li>
-						))}
+						{[
+							["", "Animation"], ["", "Comedy"], ["", "Drama"], ["", "Horror"],].map(([className, text], index) => (
+								<li key={`Genres-${index}`}>
+									<a
+										href="#"
+										className={`${className} ${styles.transition} flex gap-4 hover:text-almost-black dark:hover:text-gray-400`}
+									>
+										{text}
+									</a>
+								</li>
+							))}
+						{/* END Genres Sub-menu */}
 					</ul>
 				</li>
 				<li className="relative">
@@ -73,11 +75,11 @@ const Navbar = ({ toggleMenu, isMenuOpen }) => {
 					<ul
 						id="About-menu"
 						className={`${styles.submenumobile} ${styles.submenudesktop} ${AboutMenu
-							? "!visible p-4 pb-0 lg:!translate-y-[3rem] lg:!opacity-100 max-lg:max-h-max"
-							: ""
+								? "!visible p-4 pb-0 lg:!translate-y-[3rem] lg:!opacity-100 max-lg:max-h-max"
+								: ""
 							} transition-visibility invisible flex w-max flex-col gap-4 rounded-md leading-none lg:left-0 lg:-translate-y-[40%] lg:bg-white/95 lg:opacity-0 lg:dark:bg-gray-800/95`}
 					>
-						{[["React + Vite.js"], ["Tailwind CSS"], ["Internet Archive API"]].map(([text], index) => (
+						{[["History"], ["Our Team"], ["Blog"]].map(([text], index) => (
 							<li key={`About-${index}`}>
 								<a
 									href="#"
