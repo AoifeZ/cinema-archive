@@ -10,12 +10,6 @@ This site uses the Internet Archive API to list an play classic films.
 
 This is an apadtation of the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). 
 
-
-## Table of contents
-
-
-- [Built with](#built-with)
-
 ## Built with
 
 <!-- Bagdes -->
@@ -37,4 +31,4 @@ This is an apadtation of the [Intro section with dropdown navigation challenge o
 - [React documentation](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-This project uses [yarn](https://classic.yarnpkg.com). If you do not have yarn, checkout installation steps [here](https://classic.yarnpkg.com/en/docs/install).
+This project uses [yarn](https://classic.yarnpkg.com). If you do not have yarn, find the installation and run instructions [here](https://classic.yarnpkg.com/en/docs/install).
