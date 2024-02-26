@@ -1,6 +1,6 @@
 import styles from "../../../styles";
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
-import ThemeSwitcher from "../../ThemeSwitcher/ThemeSwitcher";
+import ThemeSwitcher from "../../DarkMode/ThemeSwitcher";
 import { useState } from "react";
 
 const Navbar = ({ toggleMenu, isMenuOpen }) => {

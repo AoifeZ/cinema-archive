@@ -1,8 +1,8 @@
-import internetarchive from "../../assets/images/internet-archive.png";
-import github from "../../assets/images/github.png";
-import mockupDesktop from "../../assets/images/image-hero-desktop.png";
-import mockupMobile from "../../assets/images/image-hero-mobile.png";
-import styles from "../../styles";
+import internetarchive from "../../../assets/images/internet-archive.png";
+import github from "../../../assets/images/github.png";
+import mockupDesktop from "../../../assets/images/image-hero-desktop.png";
+import mockupMobile from "../../../assets/images/image-hero-mobile.png";
+import styles from "../../../styles";
 
 const Hero = () => {
 	const pixelPerfectLink = `leading-none pl-[1.9375rem] pr-[1.6875rem] pt-[1.1875rem] pb-[1rem] w-max tracking-[-0.01em] font-[700] `;
