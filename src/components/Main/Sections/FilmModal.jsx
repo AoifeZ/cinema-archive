@@ -14,7 +14,7 @@ const FilmModal = ({ selectedFilm, onCloseModal }) => {
           style={{ maxWidth: '100%' }}
         ></iframe>
         <h2 className="text-2xl font-bold mb-4 dark:text-white">{selectedFilm.title}</h2>
-        <div className="max-h-48 overflow-y-auto mb-4"> {/* Container for description with fixed height and scrolling */}
+        <div className="max-h-48 overflow-y-auto mb-4 scrollbar-thin scrollbar-thumb-gray-300"> {/* Container for description with fixed height and scrolling */}
           <p className="dark:text-gray-300">{selectedFilm.description}</p>
         </div>
         <div className="flex justify-center mt-4">
