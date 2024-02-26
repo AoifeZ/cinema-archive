@@ -1,6 +1,6 @@
 import Navbar from "./Navbar/Navbar";
 import styles from "../../styles";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
