@@ -15,11 +15,6 @@ This site uses the Internet Archive API to list and play classic films.
 This is an apadtation of the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). 
 
 
-## Table of contents
-
-
-- [Built with](#built-with)
-
 ## Built with
 
 <!-- Bagdes -->
