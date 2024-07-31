@@ -5,7 +5,7 @@ import FilmSlider from './FilmSlider';
 const FilmSection = () => {
   const [selectedFilm, setSelectedFilm] = useState(null);
   const [Kurasawa, setKurasawa] = useState([]);
-  const [Truffaut, setTruffaut] = useState([]);
+  const [Hitchcock, setHitchcock] = useState([]);
 
   // Fetch film data and set state
   useEffect(() => {
@@ -20,7 +20,7 @@ const FilmSection = () => {
     };
 
     fetchFilmsData("Kurosawa", setKurasawa);
-    fetchFilmsData("Truffaut", setTruffaut);
+    fetchFilmsData("Hitchcock", setHitchcock);
   }, []);
 
   const handleReadMore = (film) => {
@@ -38,8 +38,8 @@ const FilmSection = () => {
         <FilmSlider films={Kurasawa} handleReadMore={handleReadMore} />
       </div>
       <div className="m-10 md:m-20">
-        <h1 className="text-3xl font-bold mb-4 dark:text-white">Classic Truffaut:</h1>
-        <FilmSlider films={Truffaut} handleReadMore={handleReadMore} />
+        <h1 className="text-3xl font-bold mb-4 dark:text-white">Classic Hitchcock:</h1>
+        <FilmSlider films={Hitchcock} handleReadMore={handleReadMore} />
       </div>
       {selectedFilm && (
         <FilmModal selectedFilm={selectedFilm} onCloseModal={handleCloseModal} />
