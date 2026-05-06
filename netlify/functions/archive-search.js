@@ -1,33 +1,32 @@
 export async function handler(event) {
   try {
-    const termsParam = event?.queryStringParameters?.terms ?? '';
-    const terms = termsParam
+    const creatorsParam = event?.queryStringParameters?.creators ?? '';
+    const creators = creatorsParam
       .split('|')
-      .map((term) => term.trim())
+      .map((creator) => creator.trim())
       .filter(Boolean);
 
-    if (terms.length === 0) {
+    if (creators.length === 0) {
       return {
         statusCode: 400,
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ error: 'Missing terms query parameter.' })
+        body: JSON.stringify({ error: 'Missing creators query parameter.' })
       };
     }
 
-    const filters = terms.map((term) => (
-      `creator:("${term}") OR subject:("${term}") OR title:("${term}")`
-    ));
+    const filters = creators.map((creator) => `creator:("${creator}")`);
 
     const params = new URLSearchParams();
-    params.set('q', `collection:(feature_films) AND mediatype:(movies) AND (${filters.join(' OR ')})`);
+    params.set('q', `mediatype:(movies) AND (${filters.join(' OR ')})`);
     params.append('fl[]', 'title');
     params.append('fl[]', 'description');
     params.append('fl[]', 'identifier');
+    params.append('fl[]', 'downloads');
     params.append('sort[]', 'downloads desc');
     params.set('output', 'json');
-    params.set('rows', '10');
+    params.set('rows', '30');
 
     const response = await fetch(`https://archive.org/advancedsearch.php?${params.toString()}`);
     if (!response.ok) {

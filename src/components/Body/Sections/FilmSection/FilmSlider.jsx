@@ -8,13 +8,13 @@ const FilmSlider = ({ films, handleReadMore }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: false
@@ -42,29 +42,31 @@ const FilmSlider = ({ films, handleReadMore }) => {
   const safeFilms = Array.isArray(films) ? films.filter(Boolean) : [];
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="[&_.slick-track]:flex [&_.slick-slide]:h-auto [&_.slick-slide>div]:h-full">
       {safeFilms.length > 0 ? safeFilms.map((film, index) => {
         const title = film?.title ?? 'Untitled';
         const description = film?.description ?? 'No description available.';
         const identifier = film?.identifier ?? `film-${index}`;
 
         return (
-          <div key={identifier} className="film-card-container">
-            <div className="film-card m-1 p-4 rounded shadow bg-slate-300 dark:bg-slate-700 bg-opacity-25 h-full">
+          <div key={identifier} className="film-card-container h-full">
+            <div className="film-card m-1 p-4 rounded shadow bg-slate-300 dark:bg-slate-700 bg-opacity-25 h-full flex flex-col">
               <div className="flex flex-col h-full">
                 <div className="mt-2">
-                  <iframe
-                    width="100%"
-                    height="200"
-                    src={`https://archive.org/embed/${identifier}`}
-                    allowFullScreen
-                  ></iframe>
-                  <h2 className="text-xl font-semibold my-4 text-center dark:text-white">{title.slice(0, 20)}{title.length > 20 ? <span>...</span> : null}</h2>
-                  <p className="text-slate-600 dark:text-slate-300">{description.slice(0, 95)}{description.length > 100 ? <span>...</span> : null}</p>
+                  <div className="relative w-full overflow-hidden rounded" style={{ paddingTop: '56.25%' }}>
+                    <iframe
+                      title={title}
+                      className="absolute inset-0 h-full w-full"
+                      src={`https://archive.org/embed/${identifier}`}
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                  <h2 className="font-semibold my-4 dark:text-white">{title.slice(0, 100)}{title.length > 100 ? <span>...</span> : null}</h2>
+                  <p className="text-slate-600 dark:text-slate-300">{description.slice(0, 100)}{description.length > 100 ? <span>...</span> : null}</p>
                 </div>
-                <div className="flex justify-center mt-auto">
-                  <button onClick={() => handleReadMore(film)} className="bg-indigo-500 hover:bg-indigo-700 text-white py-2 px-4 rounded focus:outline-none mt-4">
-                    Read More
+                <div className="flex mt-auto">
+                  <button onClick={() => handleReadMore(film)} className="bg-indigo-500 hover:bg-indigo-700 text-white py-2 px-4 rounded focus:outline-none">
+                    About this film
                   </button>
                 </div>
               </div>
