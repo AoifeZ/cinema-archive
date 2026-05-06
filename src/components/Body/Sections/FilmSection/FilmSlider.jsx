@@ -1,7 +1,37 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+const FilmEmbed = ({ identifier, title }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  return (
+    <div className="relative w-full overflow-hidden rounded bg-black" style={{ paddingTop: '56.25%' }}>
+      {isLoading ? (
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-2 bg-black text-slate-200">
+          <div className="h-8 w-8 animate-spin rounded-full border-4 border-indigo-300 border-t-indigo-600"></div>
+          <p className="text-sm font-medium">Loading...</p>
+        </div>
+      ) : null}
+      <iframe
+        title={title}
+        className="absolute inset-0 h-full w-full"
+        src={`https://archive.org/embed/${identifier}`}
+        allowFullScreen
+        loading="lazy"
+        onLoad={() => setIsLoading(false)}
+        onError={() => setIsLoading(false)}
+      ></iframe>
+    </div>
+  );
+};
+
+FilmEmbed.propTypes = {
+  identifier: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 const FilmSlider = ({ films, handleReadMore }) => {
   const settings = {
@@ -53,14 +83,7 @@ const FilmSlider = ({ films, handleReadMore }) => {
             <div className="film-card m-1 p-4 rounded shadow bg-slate-300 dark:bg-slate-700 bg-opacity-25 h-full flex flex-col">
               <div className="flex flex-col h-full">
                 <div className="mt-2">
-                  <div className="relative w-full overflow-hidden rounded" style={{ paddingTop: '56.25%' }}>
-                    <iframe
-                      title={title}
-                      className="absolute inset-0 h-full w-full"
-                      src={`https://archive.org/embed/${identifier}`}
-                      allowFullScreen
-                    ></iframe>
-                  </div>
+                  <FilmEmbed identifier={identifier} title={title} />
                   <h2 className="font-semibold my-4 dark:text-white">{title.slice(0, 100)}{title.length > 100 ? <span>...</span> : null}</h2>
                   <p className="text-slate-600 dark:text-slate-300">{description.slice(0, 100)}{description.length > 100 ? <span>...</span> : null}</p>
                 </div>
